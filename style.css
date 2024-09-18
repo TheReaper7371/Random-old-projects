@@ -1,0 +1,146 @@
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(141, 206, 236);
+}
+
+.box {
+    gap: 5px;
+    width: 300px;
+    height: 425px;
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+    flex-direction: column;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0 2px 15px #323232;
+    background: linear-gradient(to right, #3d3d3d, #272727, #161616);
+}
+
+.screen {
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+#d {
+    width: 270px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(114, 203, 114);
+    border: 1px solid rgba(22, 93, 22, 0.642);
+}
+
+.keys,
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.keys p,
+.buttons p {
+    display: flex;
+    justify-content: center;
+}
+
+.greyButtons,
+.blackButtons,
+.periodButton,
+.zeroButton {
+    margin: 5px;
+    border: none;
+    padding: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 15px #323232;
+
+}
+
+.buttonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottomRow {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lastRow {
+    top: 327px;
+    display: flex;
+    position: absolute;
+    padding-left: 10px;
+}
+
+.greyButtons,
+.periodButton,
+.zeroButton {
+    width: 60px;
+    height: 50px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    background-color: rgb(100, 100, 100);
+}
+
+.keyContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blackButtons {
+    width: 60px;
+    height: 50px;
+    color: white;
+    box-sizing: border-box;
+    background-color: rgb(62, 62, 62);
+}
+
+#equals {
+    width: 60px;
+    margin: 5px;
+    border: none;
+    padding: 15px;
+    height: 113px;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    background-color: rgb(241, 104, 25);
+}
+
+.zeroButton {
+    width: 130px;
+}
+
+.blackButtons:hover {
+    background-color: #272727;
+}
+
+.greyButtons:hover,
+.periodButton:hover,
+.zeroButton:hover {
+    background-color: #3d3d3d;
+}
+
+#equals:hover {
+    background-color: rgb(114, 203, 114);
+    border: 1px solid rgba(22, 93, 22, 0.642);
+}
