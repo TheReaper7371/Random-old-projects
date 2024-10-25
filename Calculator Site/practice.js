@@ -1,3 +1,5 @@
+//Date: 02/10/2020
+
 let currentInput = ""; //the digit the user inputs.
 let storedValue = ""; // the previous digit the user input.
 let operation = ""; //the operation the current input and stored input get affected by.
