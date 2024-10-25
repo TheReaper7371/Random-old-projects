@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator | GV Projects</title>
+</head>
+
+<body>
+    <section class="box">
+        <div class="screen">
+            <input type="text" id="d" readonly size="18">
+        </div>
+        <div class="keys">
+            <p class="keyContainer">
+                <button class="blackButtons" onclick="c('MC')">MC</button>
+                <button class="blackButtons" onclick="c('M+')">M+</button>
+                <button class="blackButtons" onclick="c('÷')">÷</button>
+                <button class="blackButtons" onclick="c('x')">x</button>
+            </p>
+        </div>
+        <div class="buttons">
+            <p class="buttonContainer">
+                <button class="greyButtons" onclick="d('7')">7</button>
+                <button class="greyButtons" onclick="d('8')">8</button>
+                <button class="greyButtons" onclick="d('9')">9</button>
+                <button class="greyButtons" onclick="c('-')">-</button>
+            </p>
+            <p class="buttonContainer">
+                <button class="greyButtons" onclick="d('4')">4</button>
+                <button class="greyButtons" onclick="d('5')">5</button>
+                <button class="greyButtons" onclick="d('6')">6</button>
+                <button class="greyButtons" onclick="c('+')">+</button>
+            </p>
+            <p class="bottomRow">
+                <button class="greyButtons" onclick="d('1')">1</button>
+                <button class="greyButtons" onclick="d('2')">2</button>
+                <button class="greyButtons" onclick="d('3')">3</button>
+                <button id="equals" onclick="calculate()">=</button>
+            </p>
+        </div>
+        <p class="lastRow">
+            <button class="zeroButton" onclick="d('0')">0</button>
+            <button class="periodButton" onclick="d('.')">.</button>
+        </p>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
